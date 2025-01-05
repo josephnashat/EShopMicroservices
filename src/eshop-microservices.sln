@@ -1,10 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{06D82F9E-F1E3-440C-BDD9-5A2E321EC768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{AC22180F-AA08-46F2-8886-7CF6CCD3DF61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogAPI", "Services\Catalog\CatalogAPI\CatalogAPI.csproj", "{26D093C3-D9D2-48F8-B1C7-3A673188D02C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{E16F973A-0F77-4188-BA53-DC38A8ED98AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{8D75D017-7186-44F0-A111-99F9506FDA6C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26D093C3-D9D2-48F8-B1C7-3A673188D02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D093C3-D9D2-48F8-B1C7-3A673188D02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D093C3-D9D2-48F8-B1C7-3A673188D02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D093C3-D9D2-48F8-B1C7-3A673188D02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D75D017-7186-44F0-A111-99F9506FDA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D75D017-7186-44F0-A111-99F9506FDA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D75D017-7186-44F0-A111-99F9506FDA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D75D017-7186-44F0-A111-99F9506FDA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC22180F-AA08-46F2-8886-7CF6CCD3DF61} = {06D82F9E-F1E3-440C-BDD9-5A2E321EC768}
+		{26D093C3-D9D2-48F8-B1C7-3A673188D02C} = {AC22180F-AA08-46F2-8886-7CF6CCD3DF61}
+		{8D75D017-7186-44F0-A111-99F9506FDA6C} = {E16F973A-0F77-4188-BA53-DC38A8ED98AB}
 	EndGlobalSection
 EndGlobal
